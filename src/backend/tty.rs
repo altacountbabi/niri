@@ -977,7 +977,7 @@ impl Tty {
             // formats, even though we only ever render on the primary GPU.
             render_formats.clone(),
             device.drm.cursor_size(),
-            Some(device.gbm.clone()),
+            None,
         );
 
         let mut compositor = match res {
